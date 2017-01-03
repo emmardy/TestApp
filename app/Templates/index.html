@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <h1> HOME PAGE  </h1>
+  <br>
+  <p>Click <a href="/logout">here</a> for Logout</p>
+  <p>Click <a href="http://www.google.com">here </a> for Google
+  <p>Click <a href="http://www.cbyge.com">this </a> for cbyge
+  <style>
+  	body
+  	{
+  		background-image: url(http://icanbecreative.com/resources/files/articles/40-high-resolution-wallpapers-for-minimalist-lovers/sources/smile-minimal-wallpaer-light.png);
+  	}
+  </style>
+  <br>
+  <h3>Posts:</h3>
+
+  {% for post in posts %}
+     <strong>Title:</strong> {{ post.title }} <br>
+     <strong>Post:</strong> {{ post.description }} <br>
+   <br>
+   {% endfor %}
+
+{% endblock %}   
+
+           
+       

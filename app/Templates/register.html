@@ -1,0 +1,19 @@
+{%  extends "base.html" %}
+
+{% block content %}
+
+<h1> Sign Up Here </h1>
+<form action = "" method="POST">
+<div class = "control-group">
+<div class="controls">
+
+<input type="text" id="username" name="username" class="input-xlarge" placeholder="Enter Username" value="{{ request.form.username }}" required>
+<input type="password" name="password" name = "password" class="input-xlarge" placeholder="Enter password" value="{{ request.form.password}}" required>
+<input type="email" name="email_id" name ="email" class="input-xlarge" placeholder="Enter your email_id" value="{{request.form.email}}" required>
+<button type="submit" class="btn btn-success">Signup</button>
+
+</div>
+</div>
+</form>
+
+{% endblock %}
